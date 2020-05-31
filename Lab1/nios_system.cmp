@@ -1,0 +1,15 @@
+	component nios_system is
+		port (
+			clk_clk       : in    std_logic                    := 'X';             -- clk
+			reset_reset_n : in    std_logic                    := 'X';             -- reset_n
+			rs232_RXD     : in    std_logic                    := 'X';             -- RXD
+			rs232_TXD     : out   std_logic;                                       -- TXD
+			lcd_DATA      : inout std_logic_vector(7 downto 0) := (others => 'X'); -- DATA
+			lcd_ON        : out   std_logic;                                       -- ON
+			lcd_BLON      : out   std_logic;                                       -- BLON
+			lcd_EN        : out   std_logic;                                       -- EN
+			lcd_RS        : out   std_logic;                                       -- RS
+			lcd_RW        : out   std_logic                                        -- RW
+		);
+	end component nios_system;
+

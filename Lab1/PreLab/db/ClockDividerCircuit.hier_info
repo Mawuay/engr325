@@ -1,0 +1,12 @@
+|ClockDividerCircuit
+Clock => ClkOutSig.CLK
+Clock => Count[0].CLK
+Clock => Count[1].CLK
+Clock => Count[2].CLK
+Reset_n => Count[0].ACLR
+Reset_n => Count[1].ACLR
+Reset_n => Count[2].ACLR
+Reset_n => ClkOutSig.ENA
+ClockOut <= ClkOutSig.DB_MAX_OUTPUT_PORT_TYPE
+
+

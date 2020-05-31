@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nios2_config version="1.0">
+    <system>
+        <system_info filepath="true">nios_system.qsys</system_info>
+        <system_sof filepath="true">Lab7.sof</system_sof>
+        <system_jdi filepath="true">Lab7.jdi</system_jdi>
+        <cable>USB-Blaster [USB-0]</cable>
+        <processor JTAGHubInstanceID="0">nios2_qsys_0</processor>
+        <terminal JTAGHubInstanceID="0">JTAGUART</terminal>
+    </system>
+    <program>
+        <type>BSP</type>
+        <options>
+            <source_files>
+                <source_file filepath="true">main.c</source_file>
+            </source_files>
+            <bsp_settings_tcl_script filepath="true"/>
+        </options>
+    </program>
+</nios2_config>

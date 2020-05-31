@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nios2_config version="1.0">
+    <system>
+        <system_info filepath="true">..\..\nios_system.qsys</system_info>
+        <system_sof filepath="true">..\..\output_files\Lab4.sof</system_sof>
+        <system_jdi filepath="true">..\..\output_files\Lab4.jdi</system_jdi>
+        <cable>USB-Blaster [USB-0]</cable>
+        <processor JTAGHubInstanceID="0">CPU</processor>
+        <elf_section name="text">
+            <memory_device>RAM/s1</memory_device>
+            <memory_start_offset>0</memory_start_offset>
+        </elf_section>
+        <elf_section name="data">
+            <memory_device>RAM/s1</memory_device>
+            <memory_start_offset>0</memory_start_offset>
+        </elf_section>
+        <terminal JTAGHubInstanceID="0"/>
+    </system>
+    <program>
+        <type>C</type>
+        <options>
+            <source_files>
+                <source_file filepath="true">main.c</source_file>
+                <source_file filepath="true">busbridgehal.c</source_file>
+                <source_file filepath="true">busbridgehal.h</source_file>
+                <source_file filepath="true">C:\altera\13sp1\ip\altera\nios2_ip\altera_nios2\HAL\inc\io.h</source_file>
+            </source_files>
+            <compiler_flags>-g -O1 -ffunction-sections -fverbose-asm -fno-inline</compiler_flags>
+            <emulate_unimpl_instructions>true</emulate_unimpl_instructions>
+            <use_small_c_library>true</use_small_c_library>
+        </options>
+    </program>
+</nios2_config>

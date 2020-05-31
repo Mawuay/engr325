@@ -1,0 +1,29 @@
+INterrupts logic 
+
+function resetTimer { }
+
+function displayTime { }
+
+function flashHex { }
+
+int main (){
+Do nothing ...(Will be replaced by timer counting)
+
+Interput Service Routine
+if (Key1 = '1') {
+	resetTimer;
+	set Key1 = '0';
+}
+
+elsif (Key2 = '1') {
+	displayTime;
+	set Key2 = '0';
+}
+
+elsif (Key3 = '1') {
+	flashHex
+	set Key3 = '0';
+}
+return 0;
+}
+

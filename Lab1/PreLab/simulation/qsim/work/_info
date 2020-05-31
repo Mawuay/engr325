@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dH:\SeniorYear\ENGR325\Lab\PreLab\simulation\qsim
+vClockDividerCircuit
+Z1 I;N`:PRAEB3Z`P2z`IEE`32
+Z2 V[McfP3mGI@XRloCD1zWeb1
+Z3 dH:\SeniorYear\ENGR325\Lab\PreLab\simulation\qsim
+Z4 w1567650214
+Z5 8ClockDividerCircuit.vo
+Z6 FClockDividerCircuit.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|ClockDividerCircuit.vo|
+Z9 o-work work -O0
+Z10 n@clock@divider@circuit
+!i10b 1
+Z11 !s100 K5PR>0[Hg]SGm^Dg2=m1n1
+!s85 0
+Z12 !s108 1567650216.235000
+Z13 !s107 ClockDividerCircuit.vo|
+!s101 -O0
+vClockDividerCircuit_vlg_check_tst
+!i10b 1
+!s100 ^5TUhz]TbGi0Em1jG`W=03
+IQUBcNO3;9oNA8fPdl:zPJ2
+Z14 V9d`ZgHhXLz`bSdKbD^7Ri1
+R3
+Z15 w1567650213
+Z16 8ClockDividerCircuit.vt
+Z17 FClockDividerCircuit.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z18 !s108 1567650216.494000
+Z19 !s107 ClockDividerCircuit.vt|
+Z20 !s90 -work|work|ClockDividerCircuit.vt|
+!s101 -O0
+R9
+Z21 n@clock@divider@circuit_vlg_check_tst
+vClockDividerCircuit_vlg_sample_tst
+!i10b 1
+!s100 6j0WKh;O9nb]QeS>7GI9^3
+IR=VZLAXjO3zfjECVWNace3
+V6E>I:MRX8GckY>YkSCd7^1
+R3
+R15
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+Z22 n@clock@divider@circuit_vlg_sample_tst
+vClockDividerCircuit_vlg_vec_tst
+!i10b 1
+!s100 P30:Yh:V?i5;SH4DXSN@21
+Iom[=Ion3SXjKni;OJeMTg0
+Z23 VmFQBFiGcG]3O:Q@9;bKII2
+R3
+R15
+R16
+R17
+L0 154
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+Z24 n@clock@divider@circuit_vlg_vec_tst

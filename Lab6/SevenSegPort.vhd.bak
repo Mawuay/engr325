@@ -1,0 +1,31 @@
+-- Your Name Goes Here
+-- Date and revision info
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+-- Explanation of the entity and what it does... 
+-- (don't make these lines too long to avoid word wrapping)
+entity SevenSegPort is
+  port (
+    Clock : IN std_logic;  -- fill in with descriptions of each port
+    Reset_n : IN std_logic;
+    Selct : IN std_logic;
+    CE_n : IN std_logic;
+    R_Wn : IN std_logic;
+    ADDR : IN std_logic_vector(2 downto 0);
+    ByteEn : IN std_logic_vector(1 downto 0);
+    WRData : IN std_logic_vector(15 downto 0);
+    RDData : OUT std_logic_vector(15 downto 0);
+    HDig7 : OUT std_logic_vector(3 downto 0);
+    HDig6 : OUT std_logic_vector(3 downto 0);
+    HDig5 : OUT std_logic_vector(3 downto 0);
+    HDig4 : OUT std_logic_vector(3 downto 0);
+    HDig3 : OUT std_logic_vector(3 downto 0);
+    HDig2 : OUT std_logic_vector(3 downto 0);
+    HDig1 : OUT std_logic_vector(3 downto 0);
+    HDig0 : OUT std_logic_vector(3 downto 0)
+  );
+end entity SevenSegPort;
+
+architecture ...

@@ -1,0 +1,34 @@
+
+State Machine - |Lab1|nios_system:u0|nios_system_LCD:lcd|s_lcd_controller
+Name s_lcd_controller.LCD_STATE_6_COMPLETE s_lcd_controller.LCD_STATE_5_TRANSFER s_lcd_controller.LCD_STATE_4_BEGIN_TRANSFER s_lcd_controller.LCD_STATE_3_CHECK_BUSY s_lcd_controller.LCD_STATE_2_START_CHECK_BUSY s_lcd_controller.LCD_STATE_1_INITIALIZE s_lcd_controller.LCD_STATE_0_IDLE 
+s_lcd_controller.LCD_STATE_0_IDLE 0 0 0 0 0 0 0 
+s_lcd_controller.LCD_STATE_1_INITIALIZE 0 0 0 0 0 1 1 
+s_lcd_controller.LCD_STATE_2_START_CHECK_BUSY 0 0 0 0 1 0 1 
+s_lcd_controller.LCD_STATE_3_CHECK_BUSY 0 0 0 1 0 0 1 
+s_lcd_controller.LCD_STATE_4_BEGIN_TRANSFER 0 0 1 0 0 0 1 
+s_lcd_controller.LCD_STATE_5_TRANSFER 0 1 0 0 0 0 1 
+s_lcd_controller.LCD_STATE_6_COMPLETE 1 0 0 0 0 0 1 
+
+State Machine - |Lab1|nios_system:u0|nios_system_LCD:lcd|altera_up_character_lcd_initialization:Char_LCD_Init|s_lcd_initialize
+Name s_lcd_initialize.LCD_INIT_STATE_3_DONE s_lcd_initialize.LCD_INIT_STATE_2_CHECK_DONE s_lcd_initialize.LCD_INIT_STATE_1_SEND_COMMAND s_lcd_initialize.LCD_INIT_STATE_0_WAIT_POWER_UP 
+s_lcd_initialize.LCD_INIT_STATE_0_WAIT_POWER_UP 0 0 0 0 
+s_lcd_initialize.LCD_INIT_STATE_1_SEND_COMMAND 0 0 1 1 
+s_lcd_initialize.LCD_INIT_STATE_2_CHECK_DONE 0 1 0 1 
+s_lcd_initialize.LCD_INIT_STATE_3_DONE 1 0 0 1 
+
+State Machine - |Lab1|nios_system:u0|nios_system_LCD:lcd|altera_up_character_lcd_communication:Char_LCD_Comm|s_lcd
+Name s_lcd.LCD_STATE_0_OPERATION s_lcd.LCD_STATE_3_END s_lcd.LCD_STATE_2_HOLD s_lcd.LCD_STATE_1_ENABLE s_lcd.LCD_STATE_4_IDLE 
+s_lcd.LCD_STATE_4_IDLE 0 0 0 0 0 
+s_lcd.LCD_STATE_1_ENABLE 0 0 0 1 1 
+s_lcd.LCD_STATE_2_HOLD 0 0 1 0 1 
+s_lcd.LCD_STATE_3_END 0 1 0 0 1 
+s_lcd.LCD_STATE_0_OPERATION 1 0 0 0 1 
+
+State Machine - |Lab1|nios_system:u0|nios_system_nios2_qsys_0:nios2_qsys_0|nios_system_nios2_qsys_0_nios2_oci:the_nios_system_nios2_qsys_0_nios2_oci|nios_system_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_system_nios2_qsys_0_jtag_debug_module_wrapper|nios_system_nios2_qsys_0_jtag_debug_module_tck:the_nios_system_nios2_qsys_0_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

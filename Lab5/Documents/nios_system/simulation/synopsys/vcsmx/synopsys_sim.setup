@@ -1,0 +1,25 @@
+
+WORK > DEFAULT
+DEFAULT:                                                                  ./libraries/work/                                                                    
+work:                                                                     ./libraries/work/                                                                    
+irq_mapper:                                                               ./libraries/irq_mapper/                                                              
+rsp_xbar_mux:                                                             ./libraries/rsp_xbar_mux/                                                            
+rsp_xbar_demux:                                                           ./libraries/rsp_xbar_demux/                                                          
+cmd_xbar_mux:                                                             ./libraries/cmd_xbar_mux/                                                            
+cmd_xbar_demux_001:                                                       ./libraries/cmd_xbar_demux_001/                                                      
+cmd_xbar_demux:                                                           ./libraries/cmd_xbar_demux/                                                          
+id_router_002:                                                            ./libraries/id_router_002/                                                           
+id_router:                                                                ./libraries/id_router/                                                               
+addr_router:                                                              ./libraries/addr_router/                                                             
+BRIDGE_avalon_slave_translator_avalon_universal_slave_0_agent_rsp_fifo:   ./libraries/BRIDGE_avalon_slave_translator_avalon_universal_slave_0_agent_rsp_fifo/  
+CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: ./libraries/CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo/
+BRIDGE:                                                                   ./libraries/BRIDGE/                                                                  
+RAM:                                                                      ./libraries/RAM/                                                                     
+CPU:                                                                      ./libraries/CPU/                                                                     
+altera:                                                                   ./libraries/altera/                                                                  
+lpm:                                                                      ./libraries/lpm/                                                                     
+sgate:                                                                    ./libraries/sgate/                                                                   
+altera_mf:                                                                ./libraries/altera_mf/                                                               
+altera_lnsim:                                                             ./libraries/altera_lnsim/                                                            
+cycloneii:                                                                ./libraries/cycloneii/                                                               
+LIBRARY_SCAN = TRUE

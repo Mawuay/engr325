@@ -1,0 +1,28 @@
+    component nios_system is
+        port (
+            clk_clk            : in  std_logic                     := 'X';             -- clk
+            reset_reset_n      : in  std_logic                     := 'X';             -- reset_n
+            bridge_acknowledge : in  std_logic                     := 'X';             -- acknowledge
+            bridge_irq         : in  std_logic                     := 'X';             -- irq
+            bridge_address     : out std_logic_vector(19 downto 0);                    -- address
+            bridge_bus_enable  : out std_logic;                                        -- bus_enable
+            bridge_byte_enable : out std_logic_vector(1 downto 0);                     -- byte_enable
+            bridge_rw          : out std_logic;                                        -- rw
+            bridge_write_data  : out std_logic_vector(15 downto 0);                    -- write_data
+            bridge_read_data   : in  std_logic_vector(15 downto 0) := (others => 'X')  -- read_data
+        );
+    end component nios_system;
+
+    u0 : component nios_system
+        port map (
+            clk_clk            => CONNECTED_TO_clk_clk,            --    clk.clk
+            reset_reset_n      => CONNECTED_TO_reset_reset_n,      --  reset.reset_n
+            bridge_acknowledge => CONNECTED_TO_bridge_acknowledge, -- bridge.acknowledge
+            bridge_irq         => CONNECTED_TO_bridge_irq,         --       .irq
+            bridge_address     => CONNECTED_TO_bridge_address,     --       .address
+            bridge_bus_enable  => CONNECTED_TO_bridge_bus_enable,  --       .bus_enable
+            bridge_byte_enable => CONNECTED_TO_bridge_byte_enable, --       .byte_enable
+            bridge_rw          => CONNECTED_TO_bridge_rw,          --       .rw
+            bridge_write_data  => CONNECTED_TO_bridge_write_data,  --       .write_data
+            bridge_read_data   => CONNECTED_TO_bridge_read_data    --       .read_data
+        );
